@@ -15,7 +15,7 @@
 !LButton::MsgBox "You pressed 左键"
 
 ; win + 鼠标左键
-#LButton::Run "shutdown -p"
+; #LButton::Run "shutdown -p"
 
 ; / + 缩写 触发，格式 “ ::/缩写::文本 ”
 ::qq::123456@qq.com
@@ -27,8 +27,9 @@
 
 ::fun:: "To Whom It May Concern {enter} ********************** {enter} *******************"
 
+!g::Run "C:\U_files\Git_Repo"
 
-
+^g::Run "C:\Users\rick.liu\Documents\DGEvlot_Git"
 
 ;=========================================================================
 ;== Roy 脚本
@@ -36,10 +37,9 @@
 ; Cap + E, open everything
 CapsLock & E::Run "C:\Program Files\Everything\Everything.exe"
 
-
-; Cap + Q, Emial sign
+; Cap + Q, Emial signg
 CapsLock & Q::Send "Best regards,{enter}Rick Liu"
 
 ; Cap + W, Thank you
-CapsLock & W::SendText "Thank you."
+CapsLock & W::Send "Thank you."
 
